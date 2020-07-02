@@ -1,43 +1,43 @@
 @font-face {
     font-family: "FuturaPT";
-    src: url("./fonts/FuturaPTmedium.eot"); /* IE9 Compat Modes */
-    src: url("./fonts/FuturaPTmedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("./fonts/FuturaPTmedium.svg") format("svg"), /* Legacy iOS */
-      url("./fonts/FuturaPTmedium.woff") format("woff"), /* Modern Browsers */
-      url("./fonts/FuturaPTmedium.woff2") format("woff2"); /* Modern Browsers */
+    src: url("/static/fonts/futuraPT/FuturaPTmedium.eot"); /* IE9 Compat Modes */
+    src: url("/static/fonts/futuraPT/FuturaPTmedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("/static/fonts/futuraPT/FuturaPTmedium.svg") format("svg"), /* Legacy iOS */
+      url("/static/fonts/futuraPT/FuturaPTmedium.woff") format("woff"), /* Modern Browsers */
+      url("/static/fonts/futuraPT/FuturaPTmedium.woff2") format("woff2"); /* Modern Browsers */
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("./fonts/FuturaPTbook.eot"); /* IE9 Compat Modes */
-    src: url("./fonts/FuturaPTbook.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("./fonts/FuturaPTbook.svg") format("svg"), /* Legacy iOS */
-      url("./fonts/FuturaPTbook.woff") format("woff"), /* Modern Browsers */
-      url("./fonts/FuturaPTbook.woff2") format("woff2"); /* Modern Browsers */
+    src: url("/static/fonts/futuraPT/FuturaPTbook.eot"); /* IE9 Compat Modes */
+    src: url("/static/fonts/futuraPT/FuturaPTbook.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("/static/fonts/futuraPT/FuturaPTbook.svg") format("svg"), /* Legacy iOS */
+      url("/static/fonts/futuraPT/FuturaPTbook.woff") format("woff"), /* Modern Browsers */
+      url("/static/fonts/futuraPT/FuturaPTbook.woff2") format("woff2"); /* Modern Browsers */
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("./fonts/Montserrat-Medium.eot"); /* IE9 Compat Modes */
-    src: url("./fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("./fonts/Montserrat-Medium.svg") format("svg"), /* Legacy iOS */
-      url("./fonts/Montserrat-Medium.woff") format("woff"), /* Modern Browsers */
-      url("./fonts/Montserrat-Medium.woff2") format("woff2"); /* Modern Browsers */
+    src: url("/static/fonts/montserrat/Montserrat-Medium.eot"); /* IE9 Compat Modes */
+    src: url("/static/fonts/montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("/static/fonts/montserrat/Montserrat-Medium.svg") format("svg"), /* Legacy iOS */
+      url("/static/fonts/montserrat/Montserrat-Medium.woff") format("woff"), /* Modern Browsers */
+      url("/static/fonts/montserrat/Montserrat-Medium.woff2") format("woff2"); /* Modern Browsers */
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("./fonts/Montserrat-Regular.eot"); /* IE9 Compat Modes */
-    src: url("./fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-      url("./fonts/Montserrat-Regular.svg") format("svg"), /* Legacy iOS */
-      url("./fonts/Montserrat-Regular.woff") format("woff"), /* Modern Browsers */
-      url("./fonts/Montserrat-Regular.woff2") format("woff2"); /* Modern Browsers */
+    src: url("/static/fonts/montserrat/Montserrat-Regular.eot"); /* IE9 Compat Modes */
+    src: url("/static/fonts/montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("/static/fonts/montserrat/Montserrat-Regular.svg") format("svg"), /* Legacy iOS */
+      url("/static/fonts/montserrat/Montserrat-Regular.woff") format("woff"), /* Modern Browsers */
+      url("/static/fonts/montserrat/Montserrat-Regular.woff2") format("woff2"); /* Modern Browsers */
     font-weight: 400;
     font-style: normal;
 }
