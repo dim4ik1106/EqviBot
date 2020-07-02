@@ -1,0 +1,103 @@
+/* Font faces */
+
+@font-face {
+    font-family: 'Segoe UI Normal';
+    src: url('/static/fonts/segoeui/normal/segoeui.eot');
+    src: local("Segoe UI"),
+        local("Segoe"),
+        local("Segoe WP"),
+        url('/static/fonts/segoeui/normal/segoeui.eot?#iefix') format('embedded-opentype'),
+        url('/static/fonts/segoeui/normal/segoeui.woff') format('woff'),
+        url('/static/fonts/segoeui/normal/segoeui.svg#SegoeUI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('/static/fonts/segoeui/semibold/seguisb.eot');
+    src: local("Segoe Semibold"),
+        local("Segoe WP Semibold"),
+        url('/static/fonts/segoeui/semibold/seguisb.eot?#iefix') format('embedded-opentype'),
+        url('/static/fonts/segoeui/semibold/seguisb.woff') format('woff'),
+        url('/static/fonts/segoeui/semibold/seguisb.svg#SegoeUISemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url('/static/fonts/segoeui/bold/segoeuib.eot');
+    src: local("Segoe Bold"),
+        local("Segoe WP Bold"),
+        url('/static/fonts/segoeui/bold/segoeuib.eot?#iefix') format('eot'),
+        /* Wrong format will tell IE9+ to ignore and use WOFF instead. MSHAR-2822 */
+        url('/static/fonts/segoeui/bold/segoeuib.woff') format('woff'),
+        url('/static/fonts/segoeui/bold/segoeuib.svg#SegoeUIBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Light';
+    src: url('/static/fonts/segoeui/light/segoeuil.eot');
+    src: local("Segoe UI Light"),
+        local("Segoe WP Light"),
+        url('/static/fonts/segoeui/light/segoeuil.eot?#iefix') format('embedded-opentype'),
+        url('/static/fonts/segoeui/light/segoeuil.woff') format('woff'),
+        url('/static/fonts/segoeui/light/segoeuil.svg#SegoeUILight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ArialNarrow-Bold";
+    src: url("/static/fonts/6428.eot");
+    /* IE9 Compat Modes */
+    src: url("/static/fonts/6428.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("/static/fonts/6428.svg") format("svg"),
+        /* Legacy iOS */
+        url("/static/fonts/6428.woff") format("woff");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ArialNarrow";
+    src: url("/static/fonts/ARIALN.eot");
+    /* IE9 Compat Modes */
+    src: url("/static/fonts/ARIALN.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("/static/fonts/ARIALN.svg") format("svg"),
+        /* Legacy iOS */
+        url("/static/fonts/ARIALN.woff") format("woff");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothic-Bold";
+    src: url("/static/fonts/8483.eot");
+    /* IE9 Compat Modes */
+    src: url("/static/fonts/8483.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("/static/fonts/8483.svg") format("svg"),
+        /* Legacy iOS */
+        url("/static/fonts/8483.woff") format("woff");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("./fonts/11528.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/11528.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("./fonts/11528.svg") format("svg"), /* Legacy iOS */
+      url("./fonts/11528.woff") format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
