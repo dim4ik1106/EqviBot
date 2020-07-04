@@ -820,8 +820,8 @@ a.footer__privacy {
 
 .volume {
     position: absolute;
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
     background-image: url(/static/img/mute-button.svg);
     background-repeat: no-repeat;
     background-position: center;
