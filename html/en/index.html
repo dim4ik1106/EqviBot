@@ -1,49 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="/static/css/normalize.css">
+    <script src="/plugins/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="/static/css/style.css">
     <title>Eqvi landing</title>
 </head>
+
 <body>
     <header>
-        <div class="content-wrapper">
-            <div class="header__container">
-                <div class="header__logo white"></div>
-                <div class="header__login-and-menu-container">
-                    <a class="header__log-in white">Log in</a>
-                    <div class="header__menu-button white"></div>
+        <section class="header">
+            <div class="content-wrapper">
+                <div class="header__container white">
+                    <a href="#">
+                        <div class="header__logo white"></div>
+                    </a>
+                    <div class="header__login-and-menu-container">
+                        <a href="" class="header__log-in white">Log in</a>
+                        <div class="header__menu-button white js-menu-btn"></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </header>
     <main>
+
         <section class="intro">
             <div class="content-wrapper">
-                <p class="little-phrase"><span>You know</span> how to style clothes and <br> look instantly fashionable?</p>
-                <h1 class="intro__title">Build your <br> business</h1>
-                <h2 class="after-title">ON <span>EQVI</span></h2>
-                <button class="square-rounded-button white">Join Us</button>
-
-
-
-
-
+                <p class="little-phrase"><span class="blue">You know</span> how to style clothes and <br> look instantly
+                    fashionable?</p>
+                <h1 class="intro__title wow animate__fadeInLeft" data-wow-duration="0.8s">
+                    Build your <br> business</h1>
+                <h2 class="after-title wow animate__fadeIn" data-wow-duration="2s">ON <span class="blue">EQVI</span>
+                </h2>
+                <a href="#" class="square-rounded-button white wow animate__fadeInUpBig" data-wow-duration="1s">Join
+                    Us</a>
             </div>
-        </section>    
+        </section>
+
+        <section class="features">
+            <div class="content-wrapper">
+                <div class="two-phrase-container">
+                    <div class="phrase-container wow animate__fadeInLeftBig" data-wow-duration="1s"
+                        data-wow-offset="100">
+                        <h2 class="phrase"><span class="blue">Cooperate</span> with infinite online retailers and
+                            brands
+                            in one app.</h2>
+                        <div class="left-align-line long"></div>
+                    </div>
+                    <div class="phrase-container wow animate__fadeInRightBig" data-wow-duration="1s"
+                        data-wow-offset="100">
+                        <h2 class="phrase"><span class="blue">Share your outfits</span>, grow your audience and make
+                            money!</h2>
+                        <div class="left-align-line long"></div>
+                    </div>
+                </div>
+
+                <div class="features__section first">
+                    <div class="text-block wow animate__fadeInLeft" data-wow-duration="0.8s" data-wow-offset="300">
+                        <h2 class="text-block__title">EQVI f<span class="blue">o</span>r INFLUENCERS</h2>
+                        <div class="left-align-line"></div>
+                        <div class="text-block__desc-cont">
+                            <p class="text-block__description">EQVI is a unique ecosystem, which brings fashion
+                                influencers, consumers, online retailers and brands together.</p>
+                            <p class="text-block__description">Millions of items from largest online retailers for you
+                                to create stylish outfits for consumers from all over the world.</p>
+                        </div>
+                    </div>
+                    <div class="picture-block logos-network-pic wow animate__fadeInRight" data-wow-duration="0.5s"
+                        data-wow-offset="300">
+                        <img src="/static/img/lendeing-page-logos-network.png" alt="Our parthners">
+                    </div>
+                </div>
+
+                <div class="features__section second">
+                    <div class="picture-block two-photos-and-gif wow animate__fadeInLeft" data-wow-duration="0.5s">
+                        <img src="/static/img/landing-page-double-photos.png" alt="Images">
+                        <img class="landing-page-gif" src="/static/img/landing-gif-stub.png" alt="Our parthners">
+                    </div>
+                    <div class="text-block wow animate__fadeInRight" data-wow-duration="0.8s">
+                        <h2 class="text-block__title">UNI<span class="blue">Q</span>UE CONTENT</h2>
+                        <div class="left-align-line"></div>
+                        <div class="text-block__desc-cont">
+                            <p class="text-block__description">Сreate flawless outfits and make your unique content!
+                                Choose photo, video or collage option for better display.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features__section third">
+                    <div class="text-block wow animate__fadeInLeft" data-wow-duration="0.8s">
+                        <h2 class="text-block__title">PR<span class="blue">o</span>FIT OPTIONS</h2>
+                        <div class="left-align-line"></div>
+                        <div class="text-block__desc-cont">
+                            <p class="text-block__description">Make money from your outfits!</p>
+                            <p class="text-block__description pre-blue-dot">Receive commission with every item purchase
+                                made from your outfit. The more they buy, the more you earn!</p>
+                            <p class="text-block__description pre-blue-dot">Collaborate with brands and online
+                                retailers! Promote your profile and get paid partnerships and promotional offers.</p>
+                            <p class="text-block__description">Moreover EQVI tracks discounts and offers a high rate of
+                                cash back (up to 10%) to your subscribers. This increases sales and helps you earn!</p>
+                        </div>
+                    </div>
+                    <div class="picture-block dna-and-phone wow animate__fadeInRight tablet-hidden mobile-hidden"
+                        data-wow-duration="0.5s">
+                        <img src="/static/img/dna-and-phone.png" alt="Our parthners">
+                        <div class="arrow"></div>
+                        <div class="vlaue-cont blue js-value-cont-blue">$ 352</div>
+                        <div class="vlaue-cont js-value-cont-1">106</div>
+                        <div class="vlaue-cont js-value-cont-2">45</div>
+                    </div>
+                    <div class="picture-block phone-near-dna wow animate__fadeInRight desktop-hidden tablet-visible"
+                        data-wow-duration="0.5s">
+                        <img src="/static/img/phone-near-dna.png" alt="Our parthners">
+                    </div>
+                </div>
+                <div class="picture-block after-dna-dna desktop-hidden tablet-visible">
+                    <img src="/static/img/dna-long.png" alt="Our parthners">
+                    <div class="arrow"></div>
+                    <div class="vlaue-cont blue js-value-cont-blue">$ 352</div>
+                    <div class="vlaue-cont js-value-cont-1">106</div>
+                    <div class="vlaue-cont js-value-cont-2">45</div>
+                </div>
+
+                <div class="features__conversion-section">
+                    <div class="conversion-title__container wow animate__fadeInDownBig" data-wow-duration="1s">
+                        <h2 class="phrase"><span class="blue">8%</span>Install conversion</h2>
+                    </div>
+                    <div class="left-align-line semi-long"></div>
+                    <div class="text-block__description wow animate__fadeInUpBig" data-wow-duration="1.5s">After viewing
+                        the promo in social networks</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="counstructor">
+            <div class="content-wrapper">
+                <div class="features__section fourth dark">
+                    <div class="picture-block big-screenshots wow animate__fadeInLeft" data-wow-duration="0.5s"
+                        data-wow-offset="200">
+                        <img src="/static/img/landing-page-big-screenshots-group.png" alt="Our parthners">
+                    </div>
+                    <div class="text-block wow animate__fadeInRight" data-wow-duration="0.8s" data-wow-offset="200">
+                        <h2 class="text-block__title"><span class="blue">o</span>UTFIT CONSTRUCTOR</h2>
+                        <div class="left-align-line"></div>
+                        <div class="text-block__desc-cont">
+                            <p class="text-block__description">Create easily – use our platform to combine your perfect
+                                outfits:</p>
+                            <p class="text-block__description pre-blue-dot">Smart search from infinite online retailers
+                            </p>
+                            <p class="text-block__description pre-blue-dot">All the items you need in one app</p>
+                            <p class="text-block__description pre-blue-dot">User-friendly interface to find a perfect
+                                match</p>
+                            <p class="text-block__description pre-blue-dot">Custom audience targeting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features__section fifth dark">
+                    <div class="text-block wow animate__fadeInLeft" data-wow-duration="0.8s" data-wow-offset="200">
+                        <h2 class="text-block__title">COMPREHENSIVE DATA TRACKING <span class="blue">&</span> DIRECT
+                            FEEDBACK</h2>
+                        <div class="left-align-line"></div>
+                        <div class="text-block__desc-cont">
+                            <p class="text-block__description">Track and analyze your followers with our smart system to
+                                design the best offers. Adapt your outfits to different audiences and increase the
+                                number of purchases.</p>
+                            <p class="text-block__description pre-blue-dot">Real-time feedback to improve your offers
+                            </p>
+                            <p class="text-block__description pre-blue-dot">Detailed analytics</p>
+                            <p class="text-block__description">EQVI provides you with full information about your
+                                subscribers: gender, age, body type and even preferences and character.</p>
+                            <p class="text-block__description">The more personalized outfits you create and offer the
+                                more purchases they make.</p>
+                        </div>
+                    </div>
+                    <div class="picture-block graph-and-comment">
+                        <img src="/static/img/landing-page-graph-screenshot.png" alt="Our parthners"
+                            class="wow animate__fadeInRight" data-wow-duration="0.5s" data-wow-offset="200">
+                        <img src="/static/img/landing-page-comment-screenshot.png" alt="Our parthners"
+                            class="wow animate__fadeInRight" data-wow-duration="1s" data-wow-offset="200">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pre-footer landing">
+            <div class="content-wrapper">
+                <div class="pre-footer__container">
+                    <h2 class="pre-footer__title">We are waiting</h2>
+                    <h3 class="pre-footer__after-title">for <span class="blue">you!</span></h3>
+                    <a href="#" class="square-rounded-button">Join Us</a>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <div class="content-wrapper">
+            <div class="footer mobile-hidden">
+                <div class="footer__container">
+                    <p class="copyright">© 2019 - 2020 Eqvilibria Club</p>
+                    <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__container">
+                    <a class="footer__privacy" href="#">Пользовательское соглашение</a>
+                    <div class="footer__lang-cont">
+                        <a class="active" href="#">RU</a>
+                        <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="footer desktop-hidden mobile-visible">
+                <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+                <a class="footer__privacy" href="#">Пользовательское соглашение</a>
+                <div class="footer__lang-cont">
+                    <a class="active" href="#">RU</a>
+                    <a href="#">EN</a>
+                </div>
+                <p class="copyright">© 2019 - 2020 Eqvilibria Club</p>
+            </div>
+        </div>
+    </footer>
 
+    <div class="js-overlay"></div>
+    <div class="right-menu">
+        <div class="right-menu__wrapper">
+            <div class="right-menu__list">
+                <a href="#" class="right-menu__item">Blogger</a>
+                <a href="#" class="right-menu__item">About</a>
+                <a href="#" class="right-menu__item">News</a>
+                <a href="#" class="right-menu__item">Partners</a>
+                <a href="#" class="right-menu__item">Contact Us</a>
+            </div>
+            <div class="download__icon-container black">
+                <a href="#" class="download__icon appstore"></a>
+                <a href="#" class="download__icon playmarket"></a>
+            </div>
+            <div class="right-menu__language-container">
+                <a href="#" class="language-container-item active">EN</a>
+                <a href="#" class="language-container-item">FR</a>
+                <a href="#" class="language-container-item">RU</a>
+                <a href="#" class="language-container-item">ES</a>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
+    <script src="/static/js/script.js"></script>
 </body>
+
 </html>
