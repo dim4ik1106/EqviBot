@@ -51,15 +51,18 @@ $(document).ready(function () {
     $('#video-play-button').click(function (e) {
         video.play();
         $(this).hide();
+        $('#video-overlay').hide();
     });
 
     $('#main-page-video').click(function (e) {
         if (video.paused) {
             video.play();
             $('#video-play-button').hide();
+            $('#video-overlay').hide();
         } else {
             video.pause();
             $('#video-play-button').show();
+            $('#video-overlay').show();
         }
     });
 

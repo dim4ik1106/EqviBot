@@ -794,6 +794,20 @@ a.footer__privacy {
     border-radius: 30px;
 }
 
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    pointer-events: none;
+    border-radius: 30px;
+}
+
 .play-button {
     position: absolute;
     width: 38px;
@@ -1497,6 +1511,10 @@ footer.main .footer__container {
         padding-left: 73px;
         padding-top: 206px;
         padding-right: 25px;
+    }
+
+    #main-page-video {
+        width: 100%;
     }
 }
 
