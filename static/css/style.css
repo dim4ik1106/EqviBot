@@ -783,6 +783,15 @@ a.footer__privacy {
     width: min-content;
     margin: 0 auto;
     position: relative;
+    height: auto;
+}
+
+#main-page-video {
+    width: 767px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 30px;
 }
 
 .play-button {
@@ -793,6 +802,18 @@ a.footer__privacy {
     background-size: contain;
     top: calc(50% - 19px);
     left: calc(50% - 19px);
+}
+
+.volume {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background-image: url(/static/img/mute-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    bottom: 15px;
+    right: 15px;
 }
 
 
