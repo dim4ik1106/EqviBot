@@ -153,7 +153,7 @@ a.language-container-item:hover {
 
 
 .desktop-hidden {
-    display: none !important;
+    display: none;
 }
 
 header {
@@ -1492,11 +1492,7 @@ footer.main .footer__container {
         display: none;
     }
 
-    .mobile-visible {
-        display: block;
-    }
-
-    footer .mobile-visible {
+    footer .footer.desktop-hidden.mobile-visible {
         display: flex;
         flex-direction: column;
     }
@@ -1729,6 +1725,7 @@ footer.main .footer__container {
         height: 204px;
         background: url(/static/img/landing-page-pre-footer-fullscreen-photo-mobile.png) no-repeat center;
         background-position-y: 10%;
+        background-size: cover;
     }
 
     .pre-footer {
