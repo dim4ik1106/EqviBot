@@ -2,6 +2,7 @@ $(document).ready(function () {
     let count = 20;
 
     function plusOne() {
+        return;
         let money, val1, val2;
         if (count < 9999) {
             count++;
@@ -21,6 +22,14 @@ $(document).ready(function () {
             return;
         }
         console.log(count);
+    }
+
+    console.log($('[data-wow-offset]'));
+    console.log($('[data-wow-offset]'));
+    if ($(window).width() < 690) {
+        $('[data-wow-offset]').each(function (i) {
+            $(this).attr('data-wow-offset', $(this).attr('data-wow-offset') / 2);
+        });
     }
 
     new WOW().init();
