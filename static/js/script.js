@@ -2,7 +2,6 @@ $(document).ready(function () {
     let count = 20;
 
     function plusOne() {
-        return;
         let money, val1, val2;
         if (count < 9999) {
             count++;
@@ -43,30 +42,6 @@ $(document).ready(function () {
             let timer = setInterval(plusOne, 70);
         }
 
-        // if ($(window).width() < 690) {
-        //     if (scrollTop > 1500 && scrollTop < 3000) {
-        //         money = Math.floor(scrollTop / 10);
-        //         val1 = Math.floor(scrollTop / 30);
-        //         val2 = Math.floor(scrollTop / 80);
-        //     }
-        // } else if ($(window).width() < 1100) {
-        //     if (scrollTop > 1000 && scrollTop < 2000) {
-        //         money = Math.floor(scrollTop / 10);
-        //         val1 = Math.floor(scrollTop / 30);
-        //         val2 = Math.floor(scrollTop / 80);
-        //     }
-        // } else {
-        //     if (scrollTop > blockPos) {
-        //         let timer = setInterval(plusOne, 70);
-        //     }
-        // }
-        // } else {
-        //     if (scrollTop > 1700 && scrollTop < 3000) {
-        //         money = Math.floor(scrollTop / 10);
-        //         val1 = Math.floor(scrollTop / 30);
-        //         val2 = Math.floor(scrollTop / 80);
-        //     }
-        // }
         if (money) {
             $('.js-value-cont-blue').text('$ ' + money);
         }
