@@ -1,29 +1,63 @@
 $(document).ready(function () {
+    let count = 20;
+
+    function plusOne() {
+        let money, val1, val2;
+        if (count < 9999) {
+            count++;
+            money = Math.floor(count / 10);
+            val1 = Math.floor(count / 30);
+            val2 = Math.floor(count / 80);
+            if (money) {
+                $('.js-value-cont-blue').text('$ ' + money);
+            }
+            if (val1) {
+                $('.js-value-cont-1').text(val1);
+            }
+            if (val2) {
+                $('.js-value-cont-2').text(val2);
+            }
+        } else {
+            return;
+        }
+        console.log(count);
+    }
 
     new WOW().init();
 
     $(window).scroll(function () {
         let scrollTop = $(window).scrollTop();
         let money, val1, val2;
-        if ($(window).width() < 690) {
-            if (scrollTop > 1500 && scrollTop < 3000) {
-                money = Math.floor(scrollTop / 10);
-                val1 = Math.floor(scrollTop / 30);
-                val2 = Math.floor(scrollTop / 80);
-            }
-        } else if ($(window).width() < 1100) {
-            if (scrollTop > 1000 && scrollTop < 2000) {
-                money = Math.floor(scrollTop / 10);
-                val1 = Math.floor(scrollTop / 30);
-                val2 = Math.floor(scrollTop / 80);
-            }
-        } else {
-            if (scrollTop > 1700 && scrollTop < 3000) {
-                money = Math.floor(scrollTop / 10);
-                val1 = Math.floor(scrollTop / 30);
-                val2 = Math.floor(scrollTop / 80);
-            }
+        let blockPos = $('#js-scroll-trigger').offset().top - $(window).height();
+        blockPos += 200;
+        if (scrollTop > blockPos) {
+            let timer = setInterval(plusOne, 70);
         }
+
+        // if ($(window).width() < 690) {
+        //     if (scrollTop > 1500 && scrollTop < 3000) {
+        //         money = Math.floor(scrollTop / 10);
+        //         val1 = Math.floor(scrollTop / 30);
+        //         val2 = Math.floor(scrollTop / 80);
+        //     }
+        // } else if ($(window).width() < 1100) {
+        //     if (scrollTop > 1000 && scrollTop < 2000) {
+        //         money = Math.floor(scrollTop / 10);
+        //         val1 = Math.floor(scrollTop / 30);
+        //         val2 = Math.floor(scrollTop / 80);
+        //     }
+        // } else {
+        //     if (scrollTop > blockPos) {
+        //         let timer = setInterval(plusOne, 70);
+        //     }
+        // }
+        // } else {
+        //     if (scrollTop > 1700 && scrollTop < 3000) {
+        //         money = Math.floor(scrollTop / 10);
+        //         val1 = Math.floor(scrollTop / 30);
+        //         val2 = Math.floor(scrollTop / 80);
+        //     }
+        // }
         if (money) {
             $('.js-value-cont-blue').text('$ ' + money);
         }
