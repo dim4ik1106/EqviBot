@@ -801,11 +801,7 @@ a.footer__privacy {
 }
 
 #main-page-video {
-    width: 767px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    border-radius: 30px;
+    
 }
 
 .video-overlay {
@@ -973,6 +969,14 @@ footer.main .footer__container {
     position: absolute;
     top: 168px;
     right: 210px;
+}
+
+.main-video {
+    width: 767px;
+    /* height: auto; */
+    object-fit: contain;
+    display: block;
+    border-radius: 30px;
 }
 
 .vlaue-cont {

@@ -20,11 +20,20 @@ $(document).ready(function () {
         } else {
             return;
         }
-        console.log(count);
     }
 
-    console.log($('[data-wow-offset]'));
-    console.log($('[data-wow-offset]'));
+
+
+
+
+
+
+
+
+
+
+
+
     if ($(window).width() < 690) {
         $('[data-wow-offset]').each(function (i) {
             $(this).attr('data-wow-offset', $(this).attr('data-wow-offset') / 2);
@@ -33,25 +42,27 @@ $(document).ready(function () {
 
     new WOW().init();
 
-    $(window).scroll(function () {
-        let scrollTop = $(window).scrollTop();
-        let money, val1, val2;
-        let blockPos = $('#js-scroll-trigger').offset().top - $(window).height();
-        blockPos += 200;
-        if (scrollTop > blockPos) {
-            let timer = setInterval(plusOne, 70);
-        }
+    if ($('#js-scroll-trigger')[0]) {
+        $(window).scroll(function () {
+            let scrollTop = $(window).scrollTop();
+            let money, val1, val2;
+            let blockPos = $('#js-scroll-trigger').offset().top - $(window).height();
+            blockPos += 200;
+            if (scrollTop > blockPos) {
+                let timer = setInterval(plusOne, 70);
+            }
 
-        if (money) {
-            $('.js-value-cont-blue').text('$ ' + money);
-        }
-        if (val1) {
-            $('.js-value-cont-1').text(val1);
-        }
-        if (val2) {
-            $('.js-value-cont-2').text(val2);
-        }
-    });
+            if (money) {
+                $('.js-value-cont-blue').text('$ ' + money);
+            }
+            if (val1) {
+                $('.js-value-cont-1').text(val1);
+            }
+            if (val2) {
+                $('.js-value-cont-2').text(val2);
+            }
+        });
+    }
 
     $('.js-menu-btn').click(function (e) {
         if (!$('.right-menu').hasClass('active')) {
